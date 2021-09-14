@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;newtourtravel.feature&apos; to &apos;Java_Selenium_Training/Object_Repository/objectRepo&apos;&#x0D;&#x0A;- Original project: &apos;CucumberFramework&apos;&#x0D;&#x0A;- Destination element: &apos;Java_Selenium_Training/Object_Repository/objectRepo&apos;&#x0D;&#x0A;- Original element: &apos;newtourtravel.feature&apos;" description="Copy file" destination="=Java_Selenium_Training/Object_Repository&lt;objectRepo" element1="src/test/java/CucumberFramework/features/newtourtravel.feature" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1566052607443" units="0" version="1.0"/>
+</session>

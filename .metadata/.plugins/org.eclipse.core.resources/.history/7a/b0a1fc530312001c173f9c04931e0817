@@ -1,0 +1,16 @@
+package test.test;
+
+import java.util.ArrayList;
+
+/**
+ * Hello world!
+ *
+ */
+public class App 
+{
+    public static void main( String[] args )
+    {
+        System.out.println( "Hello World!" );
+        Array<String> ar = new Array<String>();
+    }
+}

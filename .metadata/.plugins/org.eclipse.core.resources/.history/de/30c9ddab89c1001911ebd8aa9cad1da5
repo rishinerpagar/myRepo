@@ -1,0 +1,74 @@
+package CucumberFramework.steps;
+
+import java.io.IOException;
+import java.nio.file.Paths;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import cucumber.api.java.Before;
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+
+public class TravelSteps {
+	
+	WebDriver driver;
+
+	@Before
+	public void setup() throws IOException
+	{
+		System.setProperty("webdriver.chrome.driver", Paths.get(System.getProperty("user.dir")).toRealPath() + "\\src\\test\\java\\CucumberFramework\\resources\\chromedriver.exe");
+		this.driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.manage().timeouts().pageLoadTimeout(120, TimeUnit.SECONDS);
+		
+	}
+
+	@Given("^User accessed \"([^\"]*)\" home page$")
+	public void user_accessed_home_page(String arg1) throws Throwable {
+	 driver.get("https://www.airasia.com/en/home.page");   
+	}
+
+	@Given("^Title of the page is \"([^\"]*)\"$")
+	public void title_of_the_page_is(String arg1) throws Throwable {
+	    String ExpectedTitle = driver.getTitle();
+	}
+
+	@Then("^User clicks on register link$")
+	public void user_clicks_on_register_link() throws Throwable {
+	    
+	}
+
+	@Then("^Enters \"([^\"]*)\"$")
+	public void enters(String arg1) throws Throwable {
+	    
+	}
+
+	@Then("^Selects \"([^\"]*)\"$")
+	public void selects(String arg1) throws Throwable {
+	   
+	}
+
+	@Then("^Enters \"([^\"]*)\" of choice$")
+	public void enters_of_choice(String arg1) throws Throwable {
+	    
+	}
+
+	@Then("^Enters same \"([^\"]*)\" in confirm password field$")
+	public void enters_same_in_confirm_password_field(String arg1) throws Throwable {
+	    
+	}
+
+	@When("^User Clicks on Submit Button$")
+	public void user_Clicks_on_Submit_Button() throws Throwable {
+	    
+	}
+
+	@Then("^User is successfully Registered and sees confirmation message$")
+	public void user_is_successfully_Registered_and_sees_confirmation_message() throws Throwable {
+	    
+	}
+
+}

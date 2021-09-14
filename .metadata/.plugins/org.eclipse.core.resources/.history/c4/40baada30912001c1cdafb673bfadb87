@@ -1,0 +1,42 @@
+package test.test;
+
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+
+/**
+ * Hello world!
+ *
+ */
+public class App 
+{
+	public void printOddNumbers()
+	{
+		int i = 1;
+		if(i <=100)
+		{
+			
+		}
+	}
+    public static void main( String[] args )
+    {
+        System.out.println( "Hello World!" );
+        Array[] ar = new Array[10];
+        
+        try
+        {
+        	System.out.println(ar[11]);
+        }
+        catch(Exception e)
+        {
+        	e.getMessage();
+        }
+        finally
+        {
+        	System.gc();
+        }
+        String st = "hello";
+        System.out.println(st.substring(st.indexOf('l'), 3));
+        System.out.println(st.charAt(2));
+        
+    }
+}

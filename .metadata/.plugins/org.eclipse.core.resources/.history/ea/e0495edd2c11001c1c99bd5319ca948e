@@ -1,0 +1,26 @@
+package Abstract_Class;
+
+public abstract class ClassAbstract1 {
+	
+	public abstract void function1();
+	
+	public void function2()
+	{
+		System.out.println("Hello from Abstract class");
+	}
+	
+	final public void function3()
+	{
+		System.out.println("Hello from Abstract class");
+	}
+	public static void function4()
+	{
+		System.out.println("Hello from static function of Abstract class");
+	}
+	final public void function4()
+	{
+		System.out.println("Hello from static function of Abstract class");
+	}
+	
+
+}

@@ -1,0 +1,30 @@
+package Abstract_Class;
+
+public class ExecutionClass extends ClassAbstract1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		final int x;
+		ExecutionClass ec = new ExecutionClass();
+		ec.function4();
+		ec.function2();
+		
+		
+			
+
+	}
+	
+	
+	@Override
+	public void function1() {
+		// TODO Auto-generated method stub
+		
+	}
+	public static void function4() {
+		// TODO Auto-generated method stub
+		super.function4();
+		
+	}
+	
+	
+}

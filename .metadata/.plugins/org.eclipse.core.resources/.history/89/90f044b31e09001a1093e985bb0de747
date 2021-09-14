@@ -1,0 +1,112 @@
+package CucumberFramework.steps;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.Select;
+
+import cucumber.api.java.en.And;
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+
+public class AutomationPracticeTest {
+	WebDriver driver;
+	
+	@Given("^User successfully accessed http://automationpractice.com/index.php home page$")
+	public void user_successfully_accessed_home_page() throws Throwable {
+	
+		driver.get("http://automationpractice.com/index.php");
+
+	}
+	
+	@Then("^User clicks on Sign In button$")
+	public void user_clicks_on_Sign_In_button() throws Throwable {
+
+		driver.findElement(By.xpath("//a[@href='http://automationpractice.com/index.php?controller=my-account']")).click();
+	}
+
+	@And("^Enters valid \"([^\"]*)\" under create an account$")
+	public void enters_valid_under_create_an_account(String email) throws Throwable {
+		driver.findElement(By.id("email_create")).sendKeys(email);
+	}
+
+	@Then("^clicks on Create an Account button$")
+	public void clicks_on_Create_an_Account_button() throws Throwable {
+		driver.findElement(By.id("SubmitCreate")).click();
+	}
+
+	@When("^user Select the title radiobox$")
+	public void user_Select_the_title_radiobox() throws Throwable {
+		driver.findElement(By.id("id_gender1")).click();
+	}
+
+	@When("^Enters First name as \"([^\"]*)\"$")
+	public void enters_First_name_as(String firstname) throws Throwable {
+		driver.findElement(By.id("customer_firstname")).sendKeys(firstname);
+	}
+
+	@When("^Enters Last name as \"([^\"]*)\"$")
+	public void enters_Last_name_as(String lastname) throws Throwable {
+		driver.findElement(By.id("customer_lastname")).sendKeys(lastname);
+	}
+
+	@When("^Enters password as \"([^\"]*)\"$")
+	public void enters_passord_as(String password) throws Throwable {
+		driver.findElement(By.id("passwd")).sendKeys(password);
+	}
+
+	@When("^user selects date as \"([^\"]*)\"$")
+	public void user_selects_date_as(String date) throws Throwable {
+		Select dateDropdown = new Select (driver.findElement(By.id("days")));
+		dateDropdown.selectByValue(date);
+	}
+
+	@When("^user selects month as \"([^\"]*)\"$")
+	public void user_selects_month_as(String month) throws Throwable {
+		Select dateDropdown = new Select (driver.findElement(By.id("months")));
+		dateDropdown.selectByValue(month);
+	}
+
+	@When("^user selects year of birth as \"([^\"]*)\"$")
+	public void user_selects_year_of_birth_as(String year) throws Throwable {
+
+	}
+
+	@When("^user enters address as \"([^\"]*)\"$")
+	public void user_enters_address_as(String arg1) throws Throwable {
+
+	}
+
+	@When("^user enters city as \"([^\"]*)\"$")
+	public void user_enters_city_as(String arg1) throws Throwable {
+
+	}
+
+	@When("^user selects country as \"([^\"]*)\"$")
+	public void user_selects_country_as(String arg1) throws Throwable {
+
+	}
+
+	@When("^user selects state as \"([^\"]*)\"$")
+	public void user_selects_state_as(String arg1) throws Throwable {
+
+	}
+
+	@When("^user enters postal code as \"([^\"]*)\"$")
+	public void user_enters_postal_code_as(String arg1) throws Throwable {
+
+	}
+
+	@When("^user enters Mobile Phone as \"([^\"]*)\"$")
+	public void user_enters_Mobile_Phone_as(String arg1) throws Throwable {
+
+	}
+
+	@When("^User Clicks on Register Button$")
+	public void user_Clicks_on_Register_Button() throws Throwable {
+
+	}
+
+
+
+}

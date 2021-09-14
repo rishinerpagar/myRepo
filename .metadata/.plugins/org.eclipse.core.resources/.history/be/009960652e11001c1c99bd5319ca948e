@@ -1,0 +1,39 @@
+package Abstract_Class;
+
+public class ExecutionClass extends ClassAbstract1 {
+
+	static int x=1;
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		ExecutionClass ec = new ExecutionClass();
+		ec.function4();
+		ec.function2();
+		ec.functionFinal();
+		ec.function1();
+		
+	
+			
+		
+		
+			
+
+	}
+	
+	
+	@Override
+	public void function1() {
+		// TODO Auto-generated method stub
+		super.function2();
+	}
+	public static void function4() {
+		// TODO Auto-generated method stub
+		
+		System.out.println("Hello from static function of child class");
+	}
+	
+	public void printNumbers()
+	{
+	if (x<=100)
+	}
+}

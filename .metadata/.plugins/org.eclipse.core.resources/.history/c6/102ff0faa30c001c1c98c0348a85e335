@@ -1,0 +1,88 @@
+package String_Test;
+
+public class Stringbasics {
+	
+	public static void main(String[] args)
+	{
+	String x = new String();
+	String y = "INDIA";
+	String z = "12345";
+	x="IND";
+	
+	int temp = Integer.valueOf(z);
+	System.out.println(temp);
+	System.out.println(temp+5);
+	
+	String[] arr = y.split("D");
+	System.out.println(arr[0]);
+	System.out.println(arr[1]);
+	
+	char[] arr1 = y.toCharArray();
+	
+	System.out.println(y.substring(0,2));
+	Stringbasics obj = new Stringbasics();
+	obj.middleStringTest();
+	obj.convertFirstLettertoCap();
+	
+		
+	}
+	public void middleStringTest()
+	{
+		String x = "1234XYZ40056";
+		String[] arr = x.split("XYZ");
+		System.out.println(arr[0].length());
+		System.out.println(arr[1].length());
+		
+		/*if((arr[0].length()) > (arr[1].length()) )
+		{
+			if((arr[0].length()- arr[1].length()) <=1)
+			{
+			System.out.println("XYZ is in middle");
+			}
+			else
+			{
+				System.out.println("XYZ is not in middle");
+			}
+		}
+		if((arr[0].length()) < (arr[1].length()))
+		{
+			if((arr[0].length()- arr[1].length()) <=1)
+			{
+			System.out.println("XYZ is in middle");
+			}
+			else
+			{
+				System.out.println("XYZ is not in middle");
+			}
+		}*/
+		
+		if((arr[0].length()-arr[1].length() <=1) & (arr[1].length()-arr[0].length() <=-1) )
+		{
+		 System.out.println("In the middle");
+		}
+		else
+		{
+		 System.out.println("Not in the middle");
+		}
+		 				
+	}
+	
+	public void convertFirstLettertoCap()
+	{
+		String str = "i am java programmer";
+		String[] arr = str.split(" ");
+		
+		for (int i=0; i<arr.length; i++)
+		{
+			char a = arr[i].charAt(0);
+			String first = String.valueOf(a);
+			String finaloutput = first.toUpperCase() + arr[i].substring(1, arr[i].length());
+			System.out.print(finaloutput+ " ");
+		}		
+	}
+	public void reverString()
+	{
+		String = "test";
+	}
+	
+}

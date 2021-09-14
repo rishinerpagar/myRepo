@@ -1,0 +1,33 @@
+package test.test;
+
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+
+/**
+ * Hello world!
+ *
+ */
+public class App 
+{
+    public static void main( String[] args )
+    {
+        System.out.println( "Hello World!" );
+        Array[] ar = new Array[10];
+        
+        try
+        {
+        	System.out.println(ar[11]);
+        }
+        catch(Exception e)
+        {
+        	e.getMessage();
+        }
+        finally
+        {
+        	System.gc();
+        }
+        String st = "hello";
+        System.out.println(st.substring(st.indexOf('l')));
+        System.out.println(st.charAt(2));
+    }
+}
